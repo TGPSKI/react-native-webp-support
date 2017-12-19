@@ -1,0 +1,17 @@
+{
+  "name": "react-native-webp",
+  "version": "0.3.1",
+  "keywords": [
+    "react-native",
+    "webp"
+  ],
+  "bugs": {
+    "url": "https://github.com/dbasedow/react-native-webp/issues"
+  },
+  "author": {
+    "name": "Daniel Basedow"
+  },
+  "dependencies": {
+    "react-native": "*"
+  }
+}

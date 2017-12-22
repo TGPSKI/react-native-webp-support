@@ -155,6 +155,8 @@ zip -r android-cp-archive.zip $ANDROID_CP_DEST
 IOS_CP_COMPRESSED_SIZE=$(du -sh ios-cp-archive.zip | awk '{$NF="";sub(/[ \t]+$/,"")}1')
 ANDROID_CP_COMPRESSED_SIZE=$(du -sh android-cp-archive.zip | awk '{$NF="";sub(/[ \t]+$/,"")}1')
 
+echo IOS_CP_COMPRESSED_SIZE $IOS_CP_COMPRESSED_SIZE
+echo ANDROID_CP_COMPRESSED_SIZE $ANDROID_CP_COMPRESSED_SIZE
 ```
 
 ## Add WebP Image Preview to OSX

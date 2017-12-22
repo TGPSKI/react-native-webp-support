@@ -47,10 +47,10 @@ dependencies {
 1. `yarn add TGPSKI/react-native-webp-support`
 2. Open your project in Xcode
 3. Add `WebP.framework` and `WebPDemux.framework` from node_modules/react-native-webp-support/ to your project files (Right click your project and select "Add Files to ...")
-3. [Alternative] Drag `WebP.framework` and `WebPDemux.framework` from node_modules/react-native-webp-support/ to project_root/ios
+	- [Alternative] Drag `WebP.framework` and `WebPDemux.framework` from node_modules/react-native-webp-support/ to project_root/ios
 4. Add `WebP.framework` and `WebPDemux.framework` to your `Linked Frameworks and Libraries` in the General tab of your main project target
 5. Add "$(SRCROOT)/../node_modules/react-native-webp-support" to your `Framework Search Paths`, located in the Build Settings tab of your main project target
-5. [Alternative] Ensure $(PROJECT_DIR) is in your `Framework Search Paths`
+	- [Alternative] Ensure $(PROJECT_DIR) is in your `Framework Search Paths`
 6. Add `$(SRCROOT)/../node_modules/react-native-webp-support` to your `Header Search Paths`, located in the Build Settings tab of your main project target
 7. Add `ReactNativeWebp.xcodeproj` from node_modules/react-native-webp-support/ to your project files (Right click your project and select "Add Files to ...")
 8. Add `libReactNatveWebp.a` to your `Link Binary with Libraries` step, located in the Build Phases tab of your main project target
@@ -156,7 +156,7 @@ IOS_CP_COMPRESSED_SIZE=$(du -sh ios-cp-archive.zip | awk '{$NF="";sub(/[ \t]+$/,
 ANDROID_CP_COMPRESSED_SIZE=$(du -sh android-cp-archive.zip | awk '{$NF="";sub(/[ \t]+$/,"")}1')
 
 echo IOS_CP_COMPRESSED_SIZE $IOS_CP_COMPRESSED_SIZE
-echo ANDROID_CP_COMPRESSED_SIZE $ANDROID_CP_COMPRESSED_SIZE
+echo ANDROID_CP_COMPRESSED_SIZE $ANDROID_CP_COMPRESSED_SIZEsta
 ```
 
 ## Add WebP Image Preview to OSX

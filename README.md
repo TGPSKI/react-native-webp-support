@@ -6,16 +6,18 @@ react-native-webp-support adds support for WebP images for react-native componen
 
 # Why???
 
-* We reduced our CodePush bundle size by *66%* with `.webp` format
-* We also reduced iOS and Android binary sizes by *25%* with`.webp` format
-* React Native JS Thread feels *so much faster*
-* Navigator transitions are *so much smoother*
+* We reduced our CodePush bundle size by __66%__ with `.webp` format
+* We also reduced iOS and Android binary sizes by __25%__ with`.webp` format
+* React Native JS Thread feels __so much faster__
+* Navigator transitions are __so much smoother__
 
 # Overview
 
-Android support: built out of the box with an available library from Google. See [react-native Image API documentation](https://facebook.github.io/react-native/docs/image.html#gif-and-webp-support-on-android)
+__Android support:__ built out of the box with an available library from Google.
 
-iOS support: Requires adding WebP / WebPDemux frameworks, along with linking `react-native-webp.xcodeproj` to your project.
+See [react-native Image API documentation](https://facebook.github.io/react-native/docs/image.html#gif-and-webp-support-on-android) for more details, or follow the implementation guide below.
+
+__iOS support:__ Add WebP / WebPDemux frameworks and link `react-native-webp.xcodeproj` to your project.
 
 # Installation
 
@@ -64,7 +66,9 @@ You don't have to do anything other than use WebP images. This project adds a cu
 # WebP Format Notes
 
 [WebP Compression Study](https://developers.google.com/speed/webp/docs/webp_study)
+
 [PNG vs. WebP Image Formats, Andrew Munsell Blog](https://www.andrewmunsell.com/blog/png-vs-webp/)
+
 [PNG to WebP – Comparing Compression Sizes](https://optimus.keycdn.com/support/png-to-webp/)
 
 ## Support Libraries
@@ -72,6 +76,7 @@ You don't have to do anything other than use WebP images. This project adds a cu
 Download & install cwebp and dwebp with your favorite package manager (compression and decompression).
 
 [Google WebP Developer Page](https://developers.google.com/speed/webp/docs/cwebp)
+
 [Google WebP Downloads](https://developers.google.com/speed/webp/download)
 
 ## Converting images to WebP Format
@@ -156,7 +161,9 @@ ANDROID_CP_COMPRESSED_SIZE=$(du -sh android-cp-archive.zip | awk '{$NF="";sub(/[
 
 [WebPQuickLook](https://github.com/emin/WebPQuickLook)
 
-**Copied from the repo above**
+**From the repo above**
+
+By default, OS X doesn't provide preview and thumbnail for all file types. WebP is Google's new image format and OS X doesn't recognize the .webp files. This plugin will give you an ability to see previews and thumbnails of WebP images.
 
 ```bash
 curl -L https://raw.github.com/romanbsd/WebPQuickLook/master/WebpQuickLook.tar.gz | tar -xvz

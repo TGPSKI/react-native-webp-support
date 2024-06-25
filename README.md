@@ -1,5 +1,9 @@
 # react-native-webp-support
 
+## Status: archived
+
+See [Aleksefo/react-native-webp-format](https://github.com/Aleksefo/react-native-webp-format)
+
 **Forked from [dbasedow/react-native-webp](https://github.com/dbasedow/react-native-webp)**
 
 react-native-webp-support adds support for WebP images for react-native components. This fork includes additional documentation to help users incorporate WebP support into their projects.
